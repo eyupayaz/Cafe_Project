@@ -113,7 +113,6 @@ async fetchProductsPage(page) {
     }
 },  
 
-
         
         async deleteProduct(productId) {
             if (confirm("Bu ürünü silmek istediğinize emin misiniz?")) {
