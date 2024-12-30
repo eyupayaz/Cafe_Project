@@ -12,6 +12,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\AdminController;
 use App\Http\Controllers\Api\PanelController;
+use App\Http\Controllers\Api\SearchController;
 
 
 Route::resource('products', ProductController::class);
@@ -34,3 +35,4 @@ Route::middleware('auth:sanctum')->group(function () {
 
 Route::get('/categories', [CategoryController::class, 'index']); //geçiçi çözüm olarak bu şekilde dışarı alındı 
 
+Route::get('/search', [SearchController::class, 'search']);
